@@ -20,7 +20,7 @@ class TaskModel(models.Model):
     title = models.CharField(max_length=200, null=True)
     description = models.TextField(null=True)
     status = models.CharField(max_length=20, choices=STATUS, null=True)
-    due_date = models.DateField(auto_now_add=True, null =True)
+    due_date = models.DateField(null =True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
 
